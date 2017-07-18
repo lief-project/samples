@@ -1,0 +1,106 @@
+MAGIC:
+oat
+064
+
+CHECKSUM:
+0x51390f24
+
+INSTRUCTION SET:
+X86_64
+
+INSTRUCTION SET FEATURES:
+smp,-ssse3,-sse4.1,-sse4.2,-avx,-avx2
+
+DEX FILE COUNT:
+1
+
+EXECUTABLE OFFSET:
+0x00001000
+
+INTERPRETER TO INTERPRETER BRIDGE OFFSET:
+0x00000000
+
+INTERPRETER TO COMPILED CODE BRIDGE OFFSET:
+0x00000000
+
+JNI DLSYM LOOKUP OFFSET:
+0x00000000
+
+QUICK GENERIC JNI TRAMPOLINE OFFSET:
+0x00000000
+
+QUICK IMT CONFLICT TRAMPOLINE OFFSET:
+0x00000000
+
+QUICK RESOLUTION TRAMPOLINE OFFSET:
+0x00000000
+
+QUICK TO INTERPRETER BRIDGE OFFSET:
+0x00000000
+
+IMAGE PATCH DELTA:
+-7331840 (0xff902000)
+
+IMAGE FILE LOCATION OAT CHECKSUM:
+0x0bc87cdf
+
+IMAGE FILE LOCATION OAT BEGIN:
+0x705ef000
+
+KEY VALUE STORE:
+classpath = 
+debuggable = false
+dex2oat-cmdline = --dex-file=/data/local/tmp/CallDeviceId.dex --oat-file=/data/local/tmp/CallDeviceId.oat --boot-image=/system/framework/boot.art --instruction-set=x86_64 --compiler-filter=interpret-only --compiler-backend=Quick
+dex2oat-host = X86
+image-location = /data/dalvik-cache/x86_64/system@framework@boot.art
+pic = false
+
+SIZE:
+4294971392
+
+OatDexFile:
+location: /data/local/tmp/CallDeviceId.dex
+checksum: 0x10f759a0
+0: Lre/android/art/CallDeviceId; (offset=0x0000047c) (type_idx=3) (StatusInitialized) (OatClassNoneCompiled)
+  0: void re.android.art.CallDeviceId.<init>() (dex_method_idx=2)
+    DEX CODE:
+      0x0000: 7010 0100 0000           	| invoke-direct {v0}, void java.lang.Object.<init>() // method@1
+      0x0003: 7300                     	| return-void-no-barrier
+    OatMethodOffsets (offset=0x00000000)
+      code_offset: 0x00000000 
+      gc_map: (offset=0x00000000)
+    OatQuickMethodHeader (offset=0x00000000)
+      mapping_table: (offset=0x00000000)
+      vmap_table: (offset=0x00000000)
+    QuickMethodFrameInfo
+      frame_size_in_bytes: 0
+      core_spill_mask: 0x00000000 
+      fp_spill_mask: 0x00000000 
+      vr_stack_locations:
+      	ins: v0[sp + #8]
+      	method*: v1[sp + #0]
+      	outs: v0[sp + #8]
+    CODE: (code_offset=0x00000000 size_offset=0x00000000 size=0)
+      NO CODE!
+  1: java.lang.String re.android.art.CallDeviceId.getIMEI(android.telephony.TelephonyManager) (dex_method_idx=3)
+    DEX CODE:
+      0x0000: e910 3600 0200           	| invoke-virtual-quick {v2},  // vtable@54
+      0x0003: 0c00                     	| move-result-object v0
+      0x0004: 1100                     	| return-object v0
+    OatMethodOffsets (offset=0x00000000)
+      code_offset: 0x00000000 
+      gc_map: (offset=0x00000000)
+    OatQuickMethodHeader (offset=0x00000000)
+      mapping_table: (offset=0x00000000)
+      vmap_table: (offset=0x00000000)
+    QuickMethodFrameInfo
+      frame_size_in_bytes: 0
+      core_spill_mask: 0x00000000 
+      fp_spill_mask: 0x00000000 
+      vr_stack_locations:
+      	locals: v0[sp + #4294967288]
+      	ins: v1[sp + #8] v2[sp + #12]
+      	method*: v3[sp + #0]
+      	outs: v0[sp + #8]
+    CODE: (code_offset=0x00000000 size_offset=0x00000000 size=0)
+      NO CODE!

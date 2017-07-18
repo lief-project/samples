@@ -1,0 +1,165 @@
+MAGIC:
+oat
+131
+
+LOCATION:
+./foo.oat
+
+CHECKSUM:
+0x8e82f9b5
+
+INSTRUCTION SET:
+X86
+
+INSTRUCTION SET FEATURES:
+-ssse3,-sse4.1,-sse4.2,-avx,-avx2,-popcnt
+
+DEX FILE COUNT:
+1
+
+EXECUTABLE OFFSET:
+0x00001000
+
+INTERPRETER TO INTERPRETER BRIDGE OFFSET:
+0x00000000
+
+INTERPRETER TO COMPILED CODE BRIDGE OFFSET:
+0x00000000
+
+JNI DLSYM LOOKUP OFFSET:
+0x00000000
+
+QUICK GENERIC JNI TRAMPOLINE OFFSET:
+0x00000000
+
+QUICK IMT CONFLICT TRAMPOLINE OFFSET:
+0x00000000
+
+QUICK RESOLUTION TRAMPOLINE OFFSET:
+0x00000000
+
+QUICK TO INTERPRETER BRIDGE OFFSET:
+0x00000000
+
+IMAGE PATCH DELTA:
+15335424 (0x00ea0000)
+
+IMAGE FILE LOCATION OAT CHECKSUM:
+0xdacfe293
+
+IMAGE FILE LOCATION OAT BEGIN:
+0x716a9000
+
+KEY VALUE STORE:
+classpath = PCL[]
+compiler-filter = quicken
+concurrent-copying = true
+debuggable = false
+dex2oat-cmdline = --dex-file=/data/local/tmp/CallDeviceId.dex --oat-file=/data/local/tmp/CallDeviceId.oat --boot-image=/system/framework/boot.art --instruction-set=x86 --compiler-filter=interpret-only --compiler-backend=Quick
+dex2oat-host = X86
+image-location = /data/dalvik-cache/x86/system@framework@boot.art:/data/dalvik-cache/x86/system@framework@boot-core-libart.art:/data/dalvik-cache/x86/system@framework@boot-conscrypt.art:/data/dalvik-cache/x86/system@framework@boot-okhttp.art:/data/dalvik-cache/x86/system@framework@boot-bouncycastle.art:/data/dalvik-cache/x86/system@framework@boot-apache-xml.art:/data/dalvik-cache/x86/system@framework@boot-legacy-test.art:/data/dalvik-cache/x86/system@framework@boot-ext.art:/data/dalvik-cache/x86/system@framework@boot-framework.art:/data/dalvik-cache/x86/system@framework@boot-telephony-common.art:/data/dalvik-cache/x86/system@framework@boot-voip-common.art:/data/dalvik-cache/x86/system@framework@boot-ims-common.art:/data/dalvik-cache/x86/system@framework@boot-org.apache.http.legacy.boot.art:/data/dalvik-cache/x86/system@framework@boot-android.hidl.base-V1.0-java.art:/data/dalvik-cache/x86/system@framework@boot-android.hidl.manager-V1.0-java.art
+native-debuggable = false
+pic = false
+
+SIZE:
+4096
+
+Dex file data for /data/local/tmp/CallDeviceId.dex
+Num string ids: 11
+Num method ids: 4
+Num field ids: 0
+Num type ids: 5
+Num class defs: 1
+Unique strings loaded from dex code: 0
+Total strings loaded from dex code: 0
+Number of unique dex code items: 2
+Total number of dex code bytes: 18
+
+Layout data
+SectionTypeCode:LayoutTypeSometimesUsed(0-0) LayoutTypeStartupOnly(0-0) LayoutTypeHot(0-0) LayoutTypeUsedOnce(0-0) LayoutTypeUnused(0-0)
+SectionTypeStrings:LayoutTypeSometimesUsed(0-0) LayoutTypeStartupOnly(0-0) LayoutTypeHot(0-0) LayoutTypeUsedOnce(0-0) LayoutTypeUnused(0-0)
+
+Cumulative dex file data
+Num string ids: 11
+Num method ids: 4
+Num field ids: 0
+Num type ids: 5
+Num class defs: 1
+Unique strings loaded from dex code: 0
+Total strings loaded from dex code: 0
+Number of unique dex code items: 2
+Total number of dex code bytes: 18
+
+Dependencies of /data/local/tmp/CallDeviceId.dex:
+  Landroid/telephony/TelephonyManager; must be resolved  with access flags 1
+  Ljava/lang/Object; must be resolved  with access flags 1
+  Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String; is expected to be in class Landroid/telephony/TelephonyManager;, have the access flags 1
+  Ljava/lang/Object;-><init>()V is expected to be in class Ljava/lang/Object;, have the access flags 1
+OatDexFile:
+location: /data/local/tmp/CallDeviceId.dex
+checksum: 0x10f759a0
+dex-file: 0x0000001c..0x000002bf
+type-table: 0x0000056c..0x00000573
+0: Lre/android/art/CallDeviceId; (offset=0x000005c8) (type_idx=3) (StatusInitialized) (OatClassNoneCompiled)
+  0: void re.android.art.CallDeviceId.<init>() (dex_method_idx=2)
+    DEX CODE:
+      0x0000: 7010 0100 0000           	| invoke-direct {v0}, void java.lang.Object.<init>() // method@1
+      0x0003: 7300                     	| return-void-no-barrier
+    OatMethodOffsets (offset=0x00000000)
+      code_offset: 0x00000000
+    OatQuickMethodHeader (offset=0x00000000)
+      vmap_table: (offset=0x00000000)
+    QuickMethodFrameInfo
+      frame_size_in_bytes: 0
+      core_spill_mask: 0x00000000
+      fp_spill_mask: 0x00000000
+      vr_stack_locations:
+      	ins: v0[sp + #4]
+      	method*: v1[sp + #0]
+      	outs: v0[sp + #4]
+    CODE: (code_offset=0x00000000 size_offset=0x00000000 size=0)
+      NO CODE!
+  1: java.lang.String re.android.art.CallDeviceId.getIMEI(android.telephony.TelephonyManager) (dex_method_idx=3)
+    DEX CODE:
+      0x0000: e910 4800 0200           	| invoke-virtual-quick {v2},  // vtable@72
+      0x0003: 0c00                     	| move-result-object v0
+      0x0004: 1100                     	| return-object v0
+    OatMethodOffsets (offset=0x00000000)
+      code_offset: 0x00000000
+    OatQuickMethodHeader (offset=0x00000000)
+      vmap_table: (offset=0x00000000)
+    QuickMethodFrameInfo
+      frame_size_in_bytes: 0
+      core_spill_mask: 0x00000000
+      fp_spill_mask: 0x00000000
+      vr_stack_locations:
+      	locals: v0[sp + #4294967288]
+      	ins: v1[sp + #4] v2[sp + #8]
+      	method*: v3[sp + #0]
+      	outs: v0[sp + #4]
+    CODE: (code_offset=0x00000000 size_offset=0x00000000 size=0)
+      NO CODE!
+
+OAT FILE STATS:
+Dumping cumulative use of 24 accounted bytes
+Code                             =        0 ( 0% of total)
+QuickMethodHeader                =       24 (100% of total)
+CodeInfoEncoding                 =        0 ( 0% of total)
+CodeInfoLocationCatalog          =        0 ( 0% of total)
+CodeInfoDexRegisterMap           =        0 ( 0% of total)
+CodeInfoStackMasks               =        0 ( 0% of total)
+CodeInfoRegisterMasks            =        0 ( 0% of total)
+CodeInfoInvokeInfo               =        0 ( 0% of total)
+CodeInfoStackMap                 =        0 ( 0% of total)
+  StackMapNativePc               =        0 (-nan% of stack map)
+  StackMapDexPcEncoding          =        0 (-nan% of stack map)
+  StackMapDexRegisterMap         =        0 (-nan% of stack map)
+  StackMapInlineInfoIndex        =        0 (-nan% of stack map)
+  StackMapRegisterMaskIndex      =        0 (-nan% of stack map)
+  StackMapStackMaskIndex         =        0 (-nan% of stack map)
+CodeInfoInlineInfo               =        0 ( 0% of total)
+  InlineInfoMethodIndexIdx       =        0 (-nan% of inline info)
+  InlineInfoDexPc                =        0 (-nan% of inline info)
+  InlineInfoExtraData            =        0 (-nan% of inline info)
+  InlineInfoDexRegisterMap       =        0 (-nan% of inline info)
+  InlineInfoIsLast               =        0 (-nan% of inline info)
